@@ -1,0 +1,25 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Available: 5000, 2000, 1000, 500, 100, 50, 20")
+amount = 24280
+tot = 10
+print("a*5000+b*2000+c*1000+d*500+e*100+f*50+g*20")
+print("a+b+c+d+e+f+g=tot")
+for i in range(tot+1):
+    #print("a = "+str(i))
+    for j in range(tot+1-i):
+        #print("\tb = "+str(j))
+        for k in range(tot+1-j):
+            #print("\t\tc = "+str(k))
+            for l in range(tot+1-k):
+                #print("\t\t\td = "+str(l))
+                for m in range(tot+1-l):
+                    #print("\t\t\t\te = "+str(m))
+                    for n in range(tot+1-m):
+                        #print("\t\t\t\t\tf = "+str(n))
+                        if tot-n > 0:
+                            #print("\t\t\t\t\t\tg = "+str(tot-n))
+                            cal = (i*5000+j*2000+k*1000+l*500+m*100+n*50+20*(tot-n))
+                            #print(cal)
+                            if cal == amount:
+                                print("a = "+str(i)+"\tb = "+str(j)+"\tc = "+str(k)+"\td = "+str(l)+"\te = "+str(m)+"\tf = "+str(n)+"\tg = "+str(tot-n))
